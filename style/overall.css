@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "PT Sans";
+    src: url("../font/ptsans.woff2") format("woff2"), url("../font/ptsans.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: url("../font/ptsansbold.woff2") format("woff2"), url("../font/ptsansbold.woff") format("woff");
+    font-style: normal;
+    font-weight: bold;
+}
+
+html,
+body {
+    font-family: "Pt Sans", sans-serif;
+    font-weight: normal;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    min-width: 768px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 50px -10px black;
+}
+
+header {
+    box-sizing: border-box;
+    height: 56px;
+    padding: 0% 6%;
+    padding-top: 18px;
+}
+
+header .logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+header .site-nav-list {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header .site-nav-list div {
+    display: flex;
+    justify-content: space-between;
+    width: 33%;
+    min-width: 240px;
+}
+
+header .site-nav-item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+}
