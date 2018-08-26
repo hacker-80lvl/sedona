@@ -34,3 +34,104 @@
     height: 57px;
     bottom: 0;
 }
+
+.advantages {
+    text-align: center;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+.advantages > h2+p {
+    margin-top: 60px;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.advantages>h2+p+p {
+    margin-top: 35px;
+    margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+}
+
+.flex section {
+    position: relative;
+    box-sizing: border-box;
+    flex-grow: 1;
+    width: 33%;
+    height: 256px;
+    padding: 0% 5%;
+    text-align: center;
+}
+
+.flex section h3 {
+    margin-top: 45px;
+    font-size: 21px;
+}
+
+.flex section p {
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.flex section.alone {
+    color: #ffffff;
+    background-color: #81b3d2;
+}
+
+.flex section.bgc {
+    background-color: #eeeeee;
+}
+
+.flex div {
+    width: 66%;
+    height: 256px;
+}
+
+.flex div.first {
+    background-image: url(../img/bgf2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 256px;
+}
+
+.flex div.second {
+    background-image: url(../img/bgf3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 256px;
+}
+
+.flex .with-icon {
+    position: relative;
+    height: 330px;
+}
+
+.flex .with-icon h3 {
+    margin-top: 160px;
+}
+
+.flex .with-icon h3::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    display: block;
+    width: 75px;
+    height: 75px;
+    background-image: url(../img/icon-1.png);
+    background-repeat: no-repeat;
+    transform: translateX(-50%);
+}
+
+.flex .with-icon:nth-child(2) h3::before {
+    background-image: url(../img/icon-3.png);
+}
+
+.flex .with-icon:nth-child(3) h3::before {
+    background-image: url(../img/icon-2.png);
+}
