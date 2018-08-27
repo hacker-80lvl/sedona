@@ -28,7 +28,7 @@ body {
     min-width: 768px;
     max-width: 1200px;
     margin: 0 auto;
-    box-shadow: 0px 0px 50px -10px black;
+    box-shadow: 0px 0px 30px -10px black;
 }
 
 header {
@@ -68,4 +68,52 @@ header .site-nav-item a {
     color: #000;
     font-weight: bold;
     font-size: 14px;
+}
+
+footer {
+    display: flex;
+    padding-left: 8%;
+    padding-right: 8%;
+    justify-content: space-between;
+}
+
+footer p.hashtag {
+    margin-top: 50px;
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+footer .social {
+    display: flex;
+    margin: 35px;
+    margin-left: 70px;
+    padding: 0;
+    list-style: none;
+}
+
+footer .social-item a {
+    position: relative;
+    display: block;
+    margin-left: 6px;
+    width: 46px;
+    height: 48px;
+    background: #81b3d2;
+}
+
+footer .social-item a img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer p.creator {
+    margin-top: 50px;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+footer p.creator>span {
+    text-transform: uppercase;
 }

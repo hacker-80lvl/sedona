@@ -41,7 +41,7 @@
     text-transform: uppercase;
 }
 
-.advantages > h2+p {
+.advantages>h2+p {
     margin-top: 60px;
     font-weight: 700;
     font-size: 21px;
@@ -134,4 +134,122 @@
 
 .flex .with-icon:nth-child(3) h3::before {
     background-image: url(../img/icon-2.png);
+}
+
+.hotels {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hotels h2 {
+    margin-top: 50px;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.hotels p {
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.hotels .search-hotel {
+    margin-top: 30px;
+    padding: 30px 140px;
+    border: 0;
+    font-size: 21px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #766357;
+}
+
+.hotels iframe {
+    height: 593px;
+    width: 100%;
+    border: 0;
+}
+
+.hotels .modal-container {
+    position: absolute;
+    top: 242px;
+    left: 50%;
+    width: 569px;
+    height: 395px;
+    transform: translateX(-50.5%);
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.hotels .modal-container .modal {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+.modal form {
+    margin: 55px;
+}
+
+.modal label {
+    position: relative;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.modal #race,
+.modal #exit {
+    width: 292px;
+    height: 35px;
+    padding-left: 15px;
+    border: 0;
+    background-color: #f2f2f2;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.modal #race {
+    margin-left: 21px;
+}
+
+.modal #exit {
+    margin-top: 30px;
+    margin-left: 18px;
+}
+
+.modal #adults,
+.modal #children {
+    width: 25px;
+    height: 40px;
+    margin-top: 30px;
+    padding-left: 15px;
+    border: 0;
+    background-color: #f2f2f2;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.modal .minus,
+.modal .plass {
+    position: absolute;
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+.modal button {
+    margin-top: 50px;
+    padding: 15px 195px;
+    border: 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #81b3d2;
 }

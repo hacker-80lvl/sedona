@@ -31,7 +31,7 @@
                         <a href="">Карта штата</a>
                     </li>
                     <li class="site-nav-item">
-                        <a href="">Гостиницы</a>
+                        <a href="hotels.html">Гостиницы</a>
                     </li>
                 </div>
             </ul>
@@ -41,7 +41,7 @@
     <main>
         <h1 class="visually-hidden">Sedona</h1>
         <section class="intro">
-            <h2 class="visually-hidden">Welcome to Sedona</h2>
+            <h2 class="visually-hidden">Добропожаловать в Седона</h2>
             <img src="img/Welcome.png" alt="Welcome" class="intro-img1">
             <img src="img/to the gorgeous.png" alt="to the gorgeous" class="intro-img2">
             <img src="img/Sedona.png" alt="Sedona" class="intro-img3">
@@ -106,7 +106,60 @@
                 </section>
             </div>
         </section>
+        <section class="hotels">
+            <h2>Заинтересовались?</h2>
+            <p> Укажите предполагаемые даты поездки,
+                <br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <button type="button" class="search-hotel">Поиск гостиницы в седоне</button>
+            <div class="modal-container visually-hidden">
+                <div class="modal">
+                    <form action="#" method="post">
+                        <label for="race">Дата заезда:</label>
+                        <input type="text" id="race" placeholder="24 Апреля 2017" readonly>
+                        <br>
+                        <label for="exit">Дата Выезда:</label>
+                        <input type="text" id="exit" placeholder="4 июля 2017" readonly>
+                        <br>
+                        <label for="adults">Взрослые:</label>
+                        <input type="text" id="adults" placeholder="2" readonly>
+                        <label for="children">Дети:</label>
+                        <input type="text" id="children" placeholder="0" readonly>
+                        <button type="submit">Найти</button>
+                    </form>
+                </div>
+            </div>
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18164.764138954677!2d-111.7499058873369!3d34.86796176002364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNg!5e0!3m2!1sru!2s!4v1535287797493"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </section>
     </main>
+
+    <footer>
+        <p class="hashtag">#visitsedona</p>
+        <ul class="social">
+            <li class="social-item">
+                <a href="https://twitter.com">
+                    <span class="visually-hidden">Twitter</span>
+                    <img src="img/t.png">
+                </a>
+            </li>
+            <li class="social-item">
+                <a href="https://facebook.com">
+                    <span class="visually-hidden">Facebook</span>
+                    <img src="img/fb-icon.png">
+                </a>
+            </li>
+            <li class="social-item">
+                <a href="https://youtube.com">
+                    <span class="visually-hidden">YouTube</span>
+                    <img src="img/youtube.png">
+                </a>
+            </li>
+        </ul>
+        <p class="creator">Website by
+            <span>hackeeer</span>
+        </p>
+    </footer>
 </body>
 
 </html>
