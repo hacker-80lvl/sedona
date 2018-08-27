@@ -114,16 +114,43 @@
             <div class="modal-container visually-hidden">
                 <div class="modal">
                     <form action="#" method="post">
-                        <label for="race">Дата заезда:</label>
+                        <label for="race">
+                            Дата заезда:
+                            <button type="button" class="calendar">
+                                <img src="img/calendar.png">
+                            </button>
+                        </label>
                         <input type="text" id="race" placeholder="24 Апреля 2017" readonly>
                         <br>
-                        <label for="exit">Дата Выезда:</label>
+                        <label for="exit">
+                            Дата Выезда:
+                            <button type="button" class="calendar">
+                                <img src="img/calendar.png">
+                            </button>
+                        </label>
                         <input type="text" id="exit" placeholder="4 июля 2017" readonly>
                         <br>
-                        <label for="adults">Взрослые:</label>
+                        <label for="adults">
+                            Взрослые:
+                            <button type="button" class="minus">
+                                <img src="img/minus.png">
+                            </button>
+                            <button type="button" class="plus">
+                                <img src="img/plus.png">
+                            </button>
+                        </label>
                         <input type="text" id="adults" placeholder="2" readonly>
-                        <label for="children">Дети:</label>
+                        <label for="children">
+                            Дети:
+                            <button type="button" class="minus">
+                                <img src="img/minus.png">
+                            </button>
+                            <button type="button" class="plus">
+                                <img src="img/plus.png">
+                            </button>
+                        </label>
                         <input type="text" id="children" placeholder="0" readonly>
+
                         <button type="submit">Найти</button>
                     </form>
                 </div>

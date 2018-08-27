@@ -204,8 +204,9 @@
 
 .modal #race,
 .modal #exit {
-    width: 292px;
-    height: 35px;
+    width: 260px;
+    height: 36px;
+    padding: 0;
     padding-left: 15px;
     border: 0;
     background-color: #f2f2f2;
@@ -214,7 +215,7 @@
 }
 
 .modal #race {
-    margin-left: 21px;
+    margin-left: 22px;
 }
 
 .modal #exit {
@@ -222,29 +223,76 @@
     margin-left: 18px;
 }
 
+.modal label .calendar {
+    position: absolute;
+    top: -8px;
+    left: 402px;
+    width: 40px;
+    height: 36px;
+    border: 0;
+    background-color: #f2f2f2;
+}
+
+.modal label .calendar img {
+    opacity: 0.5;
+}
+
 .modal #adults,
 .modal #children {
-    width: 25px;
-    height: 40px;
+    width: 40px;
+    height: 35px;
     margin-top: 30px;
-    padding-left: 15px;
+    margin-left: 75px;
     border: 0;
     background-color: #f2f2f2;
     font-weight: 700;
     text-transform: uppercase;
+    text-align: center;
 }
 
-.modal .minus,
-.modal .plass {
+.modal #children {
+    margin-left: 55px;
+}
+
+.modal button.minus,
+.modal button.plus {
     position: absolute;
-    display: inline-block;
-    width: 38px;
-    height: 38px;
-    margin: 0;
+    top: -8px;
+    left: 201px;
+    width: 35px;
+    height: 37px;
+    border: 0;
     background-color: #f2f2f2;
 }
 
-.modal button {
+.modal button.minus img,
+.modal button.plus img {
+    opacity: 0.5;
+}
+
+.modal button.minus {
+    left: 126px;
+}
+
+.modal label[for=children] {
+    margin-left: 60px;
+}
+
+.modal label[for=children] button.minus {
+    left: 68px;
+}
+
+.modal label[for=children] button.plus {
+    left: 142px;
+}
+
+.modal button.minus img {
+    top: 18px;
+    left:12px;
+    position: absolute;
+}
+
+.modal button[type=submit] {
     margin-top: 50px;
     padding: 15px 195px;
     border: 0;
