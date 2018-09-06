@@ -1,0 +1,339 @@
+section.filters {
+    background-color: rgb(95, 84, 84);
+    background-image: url(../img/filter-back.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+section.filters form {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 5%;
+}
+
+section.filters form>div {
+    display: flex;
+    justify-content: space-between;
+    width: 39%;
+    min-width: 380px;
+}
+
+section.filters fieldset {
+    border: 0;
+}
+
+section.filters fieldset legend {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+section.filters fieldset ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+section.filters fieldset li {
+    position: relative;
+    margin-top: 25px;
+}
+
+section.filters fieldset li label {
+    margin-left: 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+section.filters label .checkbox-indicator {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    width: 27px;
+    height: 23px;
+    background-color: transparent;
+    background-image: url(../img/checkbox-off.png);
+    background-repeat: no-repeat;
+}
+
+section.filters label input:checked+.checkbox-indicator {
+    background-image: url(../img/checkbox-on.png);
+}
+
+section.filters label input:disabled+.checkbox-indicator {
+    opacity: 0.5;
+}
+
+section.filters .cost {
+    width: 28%;
+    text-align: center;
+}
+
+section.filters .cost legend {
+    text-align: left;
+}
+
+section.filters .cost-values {
+    display: flex;
+    width: 100%;
+    height: 32px;
+    margin-bottom: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 3px;
+}
+
+section.filters .cost-values div {
+    position: relative;
+    margin-top: 6px;
+    width: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+section.filters .cost-values div:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    display: block;
+    width: 2px;
+    height: 25px;
+    background-color: #ffffff;
+}
+
+section.filters .cost #slider-range {
+    width: 100%;
+    height: 3px;
+    background-color: #897f7f;
+    border-radius: 2px;
+}
+
+section.filters .cost #current-diapason {
+    position: relative;
+    width: 75%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+section.filters .cost #current-diapason::before,
+section.filters .cost #current-diapason::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 0%;
+    display: block;
+    width: 4px;
+    height: 4px;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    background-color: #ababab;
+    box-shadow: 0px 2px 2px 0px rgb(73, 73, 73);
+}
+
+section.filters .cost #current-diapason::after {
+    left: 100%;
+}
+
+section.filters button[type="submit"] {
+    margin-top: 35px;
+    padding: 8px 33px;
+    border: 0;
+    border: 2px solid #ffffff;
+    border-radius: 3px;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.sort-container {
+    display: flex;
+    padding: 40px 5%;
+    text-transform: uppercase;
+}
+
+.sort-container p {
+    margin: 0;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+form.sort {
+    margin-left: 50px;
+    width: 100%;
+}
+
+form.sort fieldset {
+    border: 0;
+    padding: 0;
+}
+
+form.sort legend {
+    font-weight: 700;
+}
+
+form.sort fieldset>div {
+    display: flex;
+    margin-top: 6px;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 12px;
+}
+
+form.sort fieldset>div>div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    width: 355px;
+}
+
+form.sort label {
+    position: relative;
+    color: #d1d1d1;
+    border-bottom: 1px dashed #81b3d2;
+}
+
+form.sort input:hover+label {
+    color: #81b3d2;
+}
+
+form.sort input:active+label {
+    color: #000000;
+    border: 0;
+}
+
+form.sort input:checked+label {
+    color: #81b3d2;
+    border: 0;
+}
+
+form.sort label[for=view-type__ascending]::after,
+form.sort label[for=view-type__decending]::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -25px;
+    display: block;
+    width: 11px;
+    height: 10px;
+}
+
+form.sort label[for=view-type__ascending]::after {
+    left: -50px;
+    background-image: url(../img/up-dir-norm.png);
+}
+
+form.sort label[for=view-type__ascending]:hover::after {
+    background-image: url(../img/up-dir-hover.png);
+}
+
+form.sort label[for=view-type__ascending]:active::after {
+    background-image: url(../img/up-dir-active.png);
+}
+
+form.sort input:checked+label[for=view-type__ascending]::after {
+    background-image: url(../img/up-dir-active.png);
+}
+
+form.sort label[for=view-type__decending]::after {
+    background-image: url(../img/down-dir-norm.png);
+}
+
+form.sort label[for=view-type__decending]:hover::after {
+    background-image: url(../img/down-dir-hover.png);
+}
+
+form.sort label[for=view-type__decending]:active::after {
+    background-image: url(../img/down-dir-active.png);
+}
+
+form.sort input:checked+label[for=view-type__decending]::after {
+    background-image: url(../img/down-dir-active.png);
+}
+
+.results-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.results-list li {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 30px 5%;
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.results-list li:nth-child(1) {
+    border-top: 1px solid #e5e5e5;
+}
+
+.results-list li>div {
+    width: 100%;
+    margin-left: 30px;
+}
+
+.results-list li h3 {
+    margin: 0;
+}
+
+.results-list li>img {
+    width: 135px;
+    height: 90px;
+}
+
+.results-list .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.results-list .flex.links {
+    margin-top: 12px;
+}
+
+.results-list li h3 {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.results-list li .type {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 185px;
+    font-size: 14px;
+}
+
+.results-list li a {
+    display: inline-block;
+    padding: 6px 17px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #81b3d2;
+}
+
+.results-list li button {
+    padding: 6px 17px;
+    margin-left: 10px;
+    border: 0;
+    background-color: #766357;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.results-list li .rating {
+    display: inline-block;
+    padding: 5px 12px;
+    background-color: #f2f2f2;
+    font-size: 14px;
+}
