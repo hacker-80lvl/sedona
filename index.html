@@ -187,6 +187,26 @@
             <span>hackeeer</span>
         </p>
     </footer>
+    
+    <script>
+        var button_show_modal = document.querySelector(".search-hotel");
+        var modal_container = document.querySelector(".modal-container");
+        var modal = document.querySelector(".modal");
+        
+        button_show_modal.addEventListener("click", function(event) {
+            event.preventDefault();
+            if(modal_container.classList.contains("visually-hidden"))
+            {
+                modal_container.classList.remove("visually-hidden");
+                modal.classList.add("js-show");
+            }
+            else 
+            {
+                modal_container.classList.add("visually-hidden");
+                modal.classList.remove("js-show");
+            }
+        });
+    </script>
 </body>
 
 </html>

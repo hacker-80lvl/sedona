@@ -339,3 +339,16 @@
     background-color: #5496bd;
     color: #88b6d1;
 }
+
+@keyframes Anim {
+    0% {
+        transform: translateY(-700px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.js-show {
+    animation: Anim .5s;
+}
