@@ -128,10 +128,17 @@ section.filters .cost #current-diapason::after {
     display: block;
     width: 4px;
     height: 4px;
+    cursor: pointer;
     border: 8px solid #ffffff;
     border-radius: 50%;
     background-color: #ababab;
     box-shadow: 0px 2px 2px 0px rgb(73, 73, 73);
+}
+
+section.filters .cost #current-diapason:hover::before,
+section.filters .cost #current-diapason:hover::after {
+    top: -9px;
+    border: 9px solid #ffffff;
 }
 
 section.filters .cost #current-diapason::after {
@@ -147,6 +154,11 @@ section.filters button[type="submit"] {
     background-color: transparent;
     text-transform: uppercase;
     color: #ffffff;
+}
+
+section.filters button[type="submit"]:hover {
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .sort-container {
@@ -282,6 +294,14 @@ form.sort input:checked+label[for=view-type__decending]::after {
     margin: 0;
 }
 
+.results-list li h3:hover {
+    color: #81b3d2;
+}
+
+.results-list li h3:active {
+    color: #b2b2b2;
+}
+
 .results-list li>img {
     width: 135px;
     height: 90px;
@@ -320,15 +340,34 @@ form.sort input:checked+label[for=view-type__decending]::after {
     background-color: #81b3d2;
 }
 
+.results-list li a:hover {
+    background-color: #669ec0;
+}
+
+.results-list li a:active {
+    background-color: #5496bd;
+    color: #7aadcb;
+}
+
 .results-list li button {
     padding: 6px 17px;
     margin-left: 10px;
+    cursor: pointer;
     border: 0;
     background-color: #766357;
     color: #ffffff;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.results-list li button:hover {
+    background-color: #604e43;
+}
+
+.results-list li button:active {
+    background-color: #503e33;
+    color: #857871;
 }
 
 .results-list li .rating {

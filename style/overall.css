@@ -81,6 +81,18 @@ header .site-nav-item a {
     font-size: 14px;
 }
 
+header .site-nav-item a:hover {
+    color: #81b3d2;
+}
+
+header .site-nav-item a:active {
+    color: #b2b2b2;
+}
+
+header .site-nav-item-current a {
+    color: #766357;
+}
+
 footer {
     display: flex;
     padding-left: 8%;
@@ -112,6 +124,18 @@ footer .social-item a {
     background: #81b3d2;
 }
 
+footer .social-item a:hover {
+    background-color: #669ec0;
+}
+
+footer .social-item a:active {
+    background-color: #5496bd;
+}
+
+footer .social-item a:active img {
+    opacity: 0.5;
+}
+
 footer .social-item a img {
     position: absolute;
     top: 50%;
@@ -127,4 +151,12 @@ footer p.creator {
 
 footer p.creator>span {
     text-transform: uppercase;
+}
+
+footer p.creator:hover>span {
+    color: #1cb992;
+}
+
+footer p.creator:active>span {
+    color: #e61111;
 }

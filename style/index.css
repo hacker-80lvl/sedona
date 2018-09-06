@@ -165,6 +165,15 @@
     background-color: #766357;
 }
 
+.hotels .search-hotel:hover {
+    background-color: #604e43;
+}
+
+.hotels .search-hotel:active {
+    background-color: #503e33;
+    color: #857871;
+}
+
 .hotels iframe {
     height: 593px;
     width: 100%;
@@ -214,6 +223,17 @@
     text-transform: uppercase;
 }
 
+.modal #race:hover,
+.modal #exit:hover {
+    background-color: #ebebeb;
+}
+
+.modal #race:focus,
+.modal #exit:focus {
+    background-color: #ffffff;
+    outline: 2px solid #e5e5e5;
+}
+
 .modal #race {
     margin-left: 22px;
 }
@@ -235,6 +255,10 @@
 
 .modal label .calendar img {
     opacity: 0.5;
+}
+
+.modal label .calendar:hover img {
+    opacity: 1;
 }
 
 .modal #adults,
@@ -270,6 +294,11 @@
     opacity: 0.5;
 }
 
+.modal button.minus:hover img,
+.modal button.plus:hover img {
+    opacity: 1;
+}
+
 .modal button.minus {
     left: 126px;
 }
@@ -288,7 +317,7 @@
 
 .modal button.minus img {
     top: 18px;
-    left:12px;
+    left: 12px;
     position: absolute;
 }
 
@@ -300,4 +329,13 @@
     text-transform: uppercase;
     font-weight: 700;
     background-color: #81b3d2;
+}
+
+.modal button[type=submit]:hover {
+    background-color: #669ec0;
+}
+
+.modal button[type=submit]:active {
+    background-color: #5496bd;
+    color: #88b6d1;
 }
